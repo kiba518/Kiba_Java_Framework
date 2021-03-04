@@ -1,0 +1,60 @@
+-- Create table
+create table KIBA_USER
+(
+  id    NUMBER,
+  name  VARCHAR2(30),
+  age   NUMBER,
+  email VARCHAR2(50)
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+
+INSERT INTO  KIBA_USER (id, name, age, email) VALUES
+(2, 'Jack',  23, 'test2@baomidou.com');
+INSERT INTO  KIBA_USER (id, name, age, email) VALUES
+(3, 'Tom', 28, 'test3@baomidou.com');
+INSERT INTO  KIBA_USER (id, name, age, email) VALUES
+(4, 'Sandy', 21, 'test4@baomidou.com');
+INSERT INTO  KIBA_USER (id, name, age, email) VALUES
+(5, 'Billie', 24, 'test5@baomidou.com');
+
+-- Create table
+create table Kiba_Department
+(
+  id    NUMBER,
+  name  VARCHAR2(30)
+
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+
+INSERT INTO  Kiba_Department (id, name ) VALUES
+(2, '工商部' );
+INSERT INTO  Kiba_Department (id, name ) VALUES
+(3, '信息部');
+INSERT INTO  Kiba_Department (id, name ) VALUES
+(4, '法务部');
+INSERT INTO  Kiba_Department (id, name ) VALUES
+(5, '人事部');
+
+

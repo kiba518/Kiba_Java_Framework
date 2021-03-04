@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.kiba.k_framework.mapper.Kiba_UserMapper">
+
+
+    <select id="test3" resultType="com.kiba.k_framework.entity.Kiba_User" parameterType="Integer">
+        select * from Kiba_User where id=#{value}
+    </select>
+
+
+
+</mapper>
